@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this documentation, please cite it as below."
+title: "Roman Data Release Documentation (prototype)"
+authors:
+  - family-names: "YourLastName"
+    given-names: "YourFirstName"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "bp-27a-test"
