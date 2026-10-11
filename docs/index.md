@@ -6,7 +6,6 @@ This is a placeholder page to confirm that the MyST and Sphinx build works.
 :maxdepth: 2
 :caption: Contents
 
+release-checklist
 placeholder-euclid-vis
 ```
-
-EOF
