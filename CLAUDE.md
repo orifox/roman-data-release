@@ -27,7 +27,9 @@ the `_static` path is missing.
 ## Structure
 
 - `docs/conf.py`: extensions are `myst_parser` and `sphinx_copybutton`. Both
-  `.md` and `.rst` are accepted.
+  `.md` and `.rst` are accepted. `release` (shown in the sidebar title) is
+  computed in this order: the Read the Docs tag name on tag builds, then
+  `git describe --tags`, then the `CITATION.cff` version. Don't hard-code it.
 - `docs/index.md`: the root `toctree`. Every new page must be added here or
   marked `orphan: true` in front matter.
 - `docs/release-checklist.md`: contributor setup, editing workflow, and the
