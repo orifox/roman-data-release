@@ -170,3 +170,5 @@ release, settle the metadata and the license, and link the repository at
 | Sphinx says the source parser for markdown is not registered | `myst_parser` is missing from `extensions` in `docs/conf.py`, or not installed in your active environment. |
 | A MyST directive shows as a plain code block | The opening fence must be exactly three backticks followed by `{directive-name}`, with no space between. |
 | Zenodo shows no record after a release | Confirm the repository's switch is on in Zenodo's GitHub settings, and that you published a GitHub *release* (not only a tag). |
+
+> *Tag in haste, cite in perpetuity: a DOI is forever, so run the checklist first.*
