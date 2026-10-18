@@ -18,13 +18,13 @@ Roman science data are delivered primarily in the Advanced Scientific Data Forma
 
 Higher-level products combine information from multiple exposures and detectors. Level 3 (L3) products include resampled images and mosaics, while Level 4 (L4) products contain derived measurements such as source catalogs, segmentation maps, spectra, and time-domain products. Although ASDF is the principal format for image products, tabular catalogs are also delivered in formats such as Apache Parquet. These products are generated through survey-dependent processing workflows, reflecting the distinct requirements of wide-area imaging, slitless spectroscopy, and time-domain observations. The association files used to group individual observations, together with the metadata identifying pipeline versions and calibration reference files, are therefore essential components of Roman's Data Release infrastructure. Their consistency and traceability provide the foundation for the coordinated reprocessing and scientific validation described in the following sections.
 
-3. Survey Design and Strategy
+### 3. Survey Design and Strategy
 
 Roman's four community-defined surveys employ distinct observing strategies tailored to their primary scientific objectives. These strategies determine not only the spatial and temporal characteristics of the resulting datasets, but also how observations are grouped, processed, and combined into higher-level science products. The surveys differ substantially in their footprints, depth, cadence, filters, and dithering patterns, motivating survey-specific approaches to Data Release generation and validation. This section summarizes the overall observing strategies of the High-Latitude Wide-Area Survey (HLWAS), High-Latitude Time-Domain Survey (HLTDS), Galactic Bulge Time-Domain Survey (GBTDS), and Galactic Plane Survey (GPS). The specific observations and processing configurations included in individual Data Releases are described separately.
 
 The survey implementations were developed through a community-led process and are documented in the Roman Observations Time Allocation Committee (ROTAC) report and the Roman Community-defined Surveys documentation. We summarize the principal design features relevant to data processing and validation, rather than reproducing the detailed observing specifications available in those references.
 
-3.1 High-Latitude Wide-Area Survey (HLWAS)
+#### 3.1 High-Latitude Wide-Area Survey (HLWAS)
 
 The High-Latitude Wide-Area Survey (HLWAS) is designed to provide wide-field near-infrared imaging and slitless spectroscopy for studies of weak gravitational lensing, galaxy clustering, and the large-scale distribution of matter. Its observing strategy balances survey area against depth through four complementary tiers: Wide, Medium, Deep, and Ultra-Deep. The Wide tier covers approximately 2,200 deg² in a single filter, while the Medium tier covers approximately 2,300 deg² with multiband imaging and grism spectroscopy. The Deep tier consists of two fields totaling approximately 19 deg², with additional Ultra-Deep imaging covering approximately 5 deg² within those fields. Together, the tiers provide progressively deeper observations over smaller areas, supporting both the principal cosmological measurements and the calibration of photometric redshifts and galaxy shapes.
 
@@ -34,9 +34,9 @@ The filter selection and exposure depth vary by tier. The Wide tier uses F158, w
 
 For Data Release processing, the distinction between tiers is particularly important. Because the tiers have different depths, filters, and spatial footprints, they may require separate association definitions, mosaicking strategies, and validation criteria. Uniformity within a given tier is therefore a central consideration when defining HLWAS Data Release products.
 
-3.2 High-Latitude Time-Domain Survey (HLTDS)
+#### 3.2 High-Latitude Time-Domain Survey (HLTDS)
 
-The High-Latitude Time-Domain Survey (HLTDS) is designed to discover and characterize supernovae and other astrophysical transients over a broad range of redshifts. The survey targets northern and southern extragalactic fields, including regions near COSMOS and XMM-LSS, and combines repeated near-infrared imaging with slitless spectroscopy. Its observing program is divided into Pilot, Core, and Extended components, with Wide and Deep regions providing different combinations of area, depth, and temporal coverage. The Deep regions provide the sensitivity required to characterize faint, high-redshift transients, while the Wide regions increase the statistical sample and survey volume.
+The High-Latitude Time-Domain Survey (HLTDS) is designed to discover and characterize supernovae and other astrophysical transients over a broad range of redshifts. The survey targets a northern field (ELAIS-N1) and a southern field (the Euclid Deep Field South), and combines repeated near-infrared imaging with slitless spectroscopy. Its observing program is divided into Pilot, Core, and Extended components, with Wide and Deep regions providing different combinations of area, depth, and temporal coverage. The Deep regions provide the sensitivity required to characterize faint, high-redshift transients, while the Wide regions increase the statistical sample and survey volume.
 
 The Core component is designed to revisit each field approximately every five days over two years, with a nominal cadence tolerance of ±1 day and additional scheduling flexibility when necessary. The Pilot component provides earlier observations that can establish reference imaging and exercise the observing and processing strategy, while the Extended component lengthens the temporal baseline. The combination of these components enables measurements of transient light curves over a range of timescales and supports the construction of increasingly deep reference images as additional observations become available.
 
@@ -44,7 +44,7 @@ HLTDS observations employ repeated mosaics and dithering to maintain coverage of
 
 The repeated observations and evolving depth of HLTDS introduce distinctive Data Release requirements. Unlike a survey designed to produce a single uniform-depth map, HLTDS naturally produces cumulative datasets in which the number of contributing epochs, temporal coverage, and limiting depth vary across the footprint. Data Release processing must therefore preserve the temporal information required for transient science while enabling consistent reprocessing of the accumulated observations. Validation must address both the quality of the combined images and catalogs and the consistency of measurements across observing epochs.
 
-3.3 Galactic Bulge Time-Domain Survey (GBTDS)
+#### 3.3 Galactic Bulge Time-Domain Survey (GBTDS)
 
 The Galactic Bulge Time-Domain Survey (GBTDS) is designed primarily to characterize exoplanet populations through gravitational microlensing, while also enabling a broad range of studies of stellar variability, Galactic structure, and compact objects. The survey monitors six WFI fields covering approximately 1.7 deg² toward the Galactic bulge. Five fields form a contiguous region selected to balance stellar density, extinction, and microlensing sensitivity, while a sixth field targets the Galactic Center. The same fields are observed throughout the mission to establish long temporal baselines for photometric and astrometric measurements.
 
@@ -56,7 +56,7 @@ The primary monitoring filter is F146, with individual exposures of approximatel
 
 GBTDS presents a distinct processing challenge because of its exceptionally large number of repeated observations in crowded stellar fields. Its higher-level science products include time-series photometry, astrometric measurements, and microlensing event catalogs that depend on consistent calibration across entire observing seasons. Consequently, Data Release planning must coordinate the reprocessing of calibrated exposures with the downstream generation of season-level and cumulative science products. Validation must assess not only image and catalog quality, but also photometric stability, astrometric consistency, completeness, and the reliability of time-domain measurements.
 
-3.4 Galactic Plane Survey (GPS)
+#### 3.4 Galactic Plane Survey (GPS)
 
 The Galactic Plane Survey (GPS) extends Roman's observing program to the dense and highly extincted regions of the Milky Way. The survey combines three complementary components: a wide-field imaging survey, a time-domain program, and a set of deep imaging and spectroscopic fields. The wide-field component covers nearly 700 deg² of the Galactic plane, with additional extensions toward the Galactic bulge, Carina, and Serpens South. The time-domain component monitors six selected regions totaling approximately 19 deg², while the deep-field component provides additional imaging and spectroscopy in 15 WFI pointings. Together, these observations enable investigations of Galactic structure, stellar populations, star formation, and variability across a broad range of Galactic environments.
 
