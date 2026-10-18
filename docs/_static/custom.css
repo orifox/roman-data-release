@@ -1,0 +1,8 @@
+/* Release label under the sidebar logo (see _templates/layout.html).
+   Matches the styling older sphinx_rtd_theme versions gave this line. */
+.wy-side-nav-search > div.version {
+  margin-top: -0.4045em;
+  margin-bottom: 0.809em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}

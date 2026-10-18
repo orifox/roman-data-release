@@ -4,8 +4,14 @@ This is a placeholder page to confirm that the MyST and Sphinx build works. New 
 
 ```{toctree}
 :maxdepth: 2
-:caption: Contents
+:caption: Data Release Document
+
+placeholder-euclid-vis
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Contributor Guide
 
 release-checklist
-placeholder-euclid-vis
 ```

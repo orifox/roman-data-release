@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this repo is
 
 A prototype documentation site for Roman Space Telescope data releases. It is
-Sphinx with MyST Markdown and the Furo theme, built on Read the Docs, and
+Sphinx with MyST Markdown and sphinx_rtd_theme (matching the Roman pipeline
+docs), built on Read the Docs, and
 archived per release through Zenodo (the Sandbox for now). It has no code and
 no tests; the "build" is the Sphinx HTML build.
 
@@ -19,15 +20,18 @@ sphinx-build -b html docs docs/_build/html      # or: make -C docs html
 sphinx-build -W -b html docs docs/_build/html   # treat warnings as errors (release gate)
 ```
 
-The release checklist requires a clean build with no warnings. `docs/_static/`
-and `docs/_templates/` contain only a `.gitkeep` file so git tracks them. Don't
-delete those files: without them a fresh clone (and Read the Docs) warns that
-the `_static` path is missing.
+The release checklist requires a clean build with no warnings.
+
+`docs/_static/` holds the Roman logo (copied from the romancal docs) and
+`custom.css`. `docs/_templates/layout.html` overrides the theme's sidebar title
+block to add the release label; if `sphinx-rtd-theme` is upgraded, compare it
+against the theme's own `sidebartitle` block. `index.md` uses one captioned
+`toctree` per sidebar group.
 
 ## Structure
 
 - `docs/conf.py`: extensions are `myst_parser` and `sphinx_copybutton`. Both
-  `.md` and `.rst` are accepted. `release` (shown in the sidebar title) is
+  `.md` and `.rst` are accepted. `release` (shown under the sidebar logo by `_templates/layout.html`) is
   computed in this order: the Read the Docs tag name on tag builds, then
   `git describe --tags`, then the `CITATION.cff` version. Don't hard-code it.
 - `docs/index.md`: the root `toctree`. Every new page must be added here or
