@@ -38,9 +38,13 @@ against the theme's own `sidebartitle` block. `index.md` uses one captioned
   marked `orphan: true` in front matter.
 - `docs/release-checklist.md`: contributor setup, editing workflow, and the
   release procedure (tag, GitHub Release, then checks on Read the Docs and Zenodo).
-- `docs/placeholder-euclid-vis.md`: a template showing the expected structure
-  of a data-release document, modeled on the Euclid Q1 VIS paper. Each
-  section has a "Roman equivalent: TBD" prompt to be filled in.
+- `docs/dr/`: the data release document, one page per numbered section
+  (`sNN-<slug>.md`, H1 = "N. Title", subsections as H2). `dr/index.md` is the
+  landing page whose `toctree` lists the sections in order; add new section
+  pages there. Subsections from the planning spreadsheet carry a
+  `**Source:**` line (RDOCs, RTB, DMS) followed by notes on what to write.
+  `zz-euclid-model-notes.md` holds leftovers from the original Euclid-based
+  placeholder and can be deleted when no longer needed.
 - `CITATION.cff`: Zenodo pulls release metadata from here. The title,
   authors, version, and license must match the release.
 - `.readthedocs.yaml`: Ubuntu 24.04, Python 3.12, `docs/requirements.txt`.
