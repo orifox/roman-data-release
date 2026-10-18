@@ -47,6 +47,12 @@ against the theme's own `sidebartitle` block. `index.md` uses one captioned
   landing page whose `toctree` lists the sections in order; add new section
   pages there. Subsections from the planning spreadsheet carry a
   `**Source:**` line (RDOCs, RTB, DMS) followed by notes on what to write.
+  Section 5 is split further: `s05-calibration-pixel-level-correction.md`
+  holds the section intro and a `toctree` of one page per subsection in
+  `docs/dr/s05/` (unnumbered file names, "5.N Title" H1). Order comes from
+  that `toctree`; reordering means moving a line and fixing the title number.
+  Equations copied from Euclid papers use `\tag{N}` with the paper's number,
+  because Sphinx restarts equation numbering on every page.
   `zz-euclid-model-notes.md` holds leftovers from the original Euclid-based
   placeholder and can be deleted when no longer needed.
 - `CITATION.cff`: Zenodo pulls release metadata from here. The title,
