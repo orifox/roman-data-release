@@ -34,8 +34,12 @@ against the theme's own `sidebartitle` block. `index.md` uses one captioned
   `.md` and `.rst` are accepted. `release` (shown under the sidebar logo by `_templates/layout.html`) is
   computed in this order: the Read the Docs tag name on tag builds, then
   `git describe --tags`, then the `CITATION.cff` version. Don't hard-code it.
-- `docs/index.md`: the root `toctree`. Every new page must be added here or
-  marked `orphan: true` in front matter.
+- `docs/index.md`: the site home page. Its hidden root `toctree` has exactly two
+  entries, "Data Release Document" (`dr/index`) and "Contributor Guide"
+  (`release-checklist`), which is all the sidebar shows at the top level. New
+  pages go under one of those two, or are marked `orphan: true`. The master
+  table of all releases is generated from `docs/_data/releases.csv` (one row
+  per release).
 - `docs/release-checklist.md`: contributor setup, editing workflow, and the
   release procedure (tag, GitHub Release, then checks on Read the Docs and Zenodo).
 - `docs/dr/`: the data release document, one page per numbered section

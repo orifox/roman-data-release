@@ -6,3 +6,9 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* Master release table on the home page: wrap the long column headers. */
+table.dr-table th {
+  white-space: normal;
+  vertical-align: bottom;
+}

@@ -117,6 +117,9 @@ Run this when a data release or calibration breakpoint is ready. Replace
 - [ ] `CITATION.cff` is correct: title, authors, version, and license.
 - [ ] The release manifest records which calibration and pipeline version this
       release used.
+- [ ] `docs/_data/releases.csv` has a row for this release (the master table
+      on the home page), and the summary tables in `docs/dr/index.md` match it.
+      Fill in the DOI after Zenodo creates it (see Verify, below).
 - [ ] A clean local build finishes without warnings.
 - [ ] `git status` is clean and your branch is up to date with `origin/main`.
 
