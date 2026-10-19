@@ -39,7 +39,7 @@ Coverage gaps, such as missing tiles or filters, are listed in
 
 ### Data products released
 
-Products are described in full in [Section 15](s15-data-products.md).
+Products are described in full in [Section 16](s16-data-products.md).
 
 | Level | Product | Included in this release |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ s11-photometrid-redshift-tuning-and-validation
 s12-time-series-catalog-processing
 s13-time-series-catalog-validation
 s14-archive-and-data-access
-s15-data-products
 s15-calibration-and-pipeline-versions
+s16-data-products
 zz-euclid-model-notes
 ```
