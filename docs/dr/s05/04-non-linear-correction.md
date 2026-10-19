@@ -1,4 +1,4 @@
-# 5.3 Non-Linear Correction
+# 5.4 Non-Linear Correction
 
 ````{admonition} Example text from Euclid: NISP non-linearity
 :class: note

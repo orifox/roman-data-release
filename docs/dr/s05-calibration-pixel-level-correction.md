@@ -39,29 +39,29 @@ Although not strictly part of the VIS PF, for completeness we provide here a hig
 ````
 
 % Each subsection is its own page in docs/dr/s05/. To change the order,
-% move its line in the list below and update the number in its title.
+% move its line in the list below, then update the number in its title and
+% the number at the start of its file name.
 ```{toctree}
 :maxdepth: 1
 
-s05/calibration-status-summary
-s05/data-quality-flags
-s05/non-linear-correction
-s05/persistence-masking
-s05/darks-and-dark-current
-s05/cosmic-ray-identification
-s05/gain-and-gain-stability
-s05/1-f-bias-correction
-s05/flat-field
-s05/photometry
-s05/zeropoints-and-zeropoint-stability
-s05/ice
-s05/instrument-geometric-distortions-and-stability
-s05/psf-characterization-and-stability
-s05/astrometry
-s05/absolute-astrometry
-s05/relative-astrometry
-s05/brighter-fatter-effect
-s05/intrapixel-capacitance
-s05/persistence
-s05/astrometric-and-photometric-calibration
+s05/01-calibration-status-summary
+s05/02-data-quality-flags
+s05/03-darks-and-dark-current
+s05/04-non-linear-correction
+s05/05-persistence-masking
+s05/06-cosmic-ray-identification
+s05/07-1-f-bias-correction
+s05/08-gain-and-gain-stability
+s05/09-brighter-fatter-effect
+s05/10-intrapixel-capacitance
+s05/11-flat-field
+s05/12-photometry
+s05/12.1-zeropoints-and-zeropoint-stability
+s05/12.2-ice
+s05/13-instrument-geometric-distortions-and-stability
+s05/14-psf-characterization-and-stability
+s05/15-astrometry
+s05/15.1-absolute-astrometry
+s05/15.2-relative-astrometry
+s05/16-astrometric-and-photometric-calibration
 ```

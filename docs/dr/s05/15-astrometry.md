@@ -1,3 +1,3 @@
-# 5.8 1/f bias correction
+# 5.15 Astrometry
 
 **Source:** RDOCs. ditto

@@ -1,4 +1,4 @@
-# 5.5 Darks and Dark Current
+# 5.3 Darks and Dark Current
 
 ````{admonition} Example text from Euclid: NISP darks
 :class: note

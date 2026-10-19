@@ -1,4 +1,4 @@
-# 5.4 Persistence Masking
+# 5.5 Persistence Masking
 
 ````{admonition} Example text from Euclid: NISP persistence
 :class: note

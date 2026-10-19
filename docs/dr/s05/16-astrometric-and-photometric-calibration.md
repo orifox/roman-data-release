@@ -1,4 +1,4 @@
-# 5.18 Astrometric and photometric calibration
+# 5.16 Astrometric and photometric calibration
 
 The second stage, where quadrants are processed together. The paper describes
 gain equalisation, a simplified point-spread-function model for monitoring,

@@ -1,4 +1,4 @@
-# 5.15 Brighter-fatter effect
+# 5.9 Brighter-fatter effect
 
 **Source:** RDOCs.
 
