@@ -1,49 +1,21 @@
 # 6. Exposure Level Processing
 
-## 6.0 Overview
+% Each subsection is its own page in docs/dr/s06/. To change the order,
+% move its line in the list below, then update the number in its title and
+% the number at the start of its file name.
+```{toctree}
+:maxdepth: 1
 
-**Source:** RDOCs. Basically a snapshot of RDOCs at the time of each release
-
-## 6.1 Data quality flagging
-
-**Source:** RDOCs.
-
-## 6.2 Saturation detection
-
-**Source:** RDOCs.
-
-## 6.3 Reference pixel correction
-
-**Source:** RDOCs.
-
-## 6.4 Linearity Correction
-
-**Source:** RDOCs.
-
-## 6.5 Dark Current subtraction
-
-**Source:** RDOCs.
-
-## 6.6 Ramp fitting and jump detection
-
-**Source:** RDOCs.
-
-## 6.7 WCS assignment and astrometric registration
-
-**Source:** RDOCs.
-
-## 6.8 Flatfielding
-
-**Source:** RDOCs.
-
-## 6.9 Photometric zeropoints
-
-**Source:** RDOCs.
-
-## 6.10 Uncertainty arrays and error model
-
-**Source:** RDOCs.
-
-## 6.11 Known problems
-
-**Source:** RTB. E.g. Highlight implications of exposure-level processing for things that might change during the exposure.
+s06/00-overview
+s06/01-data-quality-flagging
+s06/02-saturation-detection
+s06/03-reference-pixel-correction
+s06/04-linearity-correction
+s06/05-dark-current-subtraction
+s06/06-ramp-fitting-and-jump-detection
+s06/07-wcs-assignment-and-astrometric-registration
+s06/08-flatfielding
+s06/09-photometric-zeropoints
+s06/10-uncertainty-arrays-and-error-model
+s06/11-known-problems
+```

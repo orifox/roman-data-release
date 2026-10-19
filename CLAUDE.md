@@ -47,10 +47,10 @@ against the theme's own `sidebartitle` block. `index.md` uses one captioned
   landing page whose `toctree` lists the sections in order; add new section
   pages there. Subsections from the planning spreadsheet carry a
   `**Source:**` line (RDOCs, RTB, DMS) followed by notes on what to write.
-  Section 5 is split further: `s05-calibration-pixel-level-correction.md`
-  holds the section intro and a `toctree` of one page per subsection in
-  `docs/dr/s05/` (file names prefixed with the subsection number, e.g.
-  `05-persistence-masking.md`, `12.1-zeropoints-...md`, so the folder sorts
+  Sections 5 and 6 are split further: the section page (e.g.
+  `s05-calibration-pixel-level-correction.md`) holds any section intro and a
+  `toctree` of one page per subsection in `docs/dr/sNN/` (file names prefixed with the subsection number, e.g.
+  `05-persistence-masking.md`, `12.1-zeropoints-...md`, `00-overview.md`, so the folder sorts
   in page order; "5.N Title" H1). Order comes from that `toctree`;
   reordering means moving a line, then fixing the title number and the
   file-name prefix (use `git mv`).
