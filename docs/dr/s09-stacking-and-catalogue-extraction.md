@@ -1,25 +1,15 @@
 # 9. Stacking and catalogue extraction
 
-## 9.0 Overview
+% Each subsection is its own page in docs/dr/s09/. To change the order,
+% move its line in the list below, then update the number in its title and
+% the number at the start of its file name.
+```{toctree}
+:maxdepth: 1
 
-**Source:** RDOCs. This whole section could instead be a subsection of "Static Catalog Validation"…
-
-## 9.1 Input source models
-
-**Source:** RDOCs.
-
-## 9.2 Limitations
-
-**Source:** RDOCs. Caveats: Inserting in to L3 images so PSF & sampling is only approximate; Not accounting for SED-dependent bandpass variations due to ice or angle of incidence. Not accounting for astrometric effect of filter refraction.
-
-## 9.3 Injection, recovery and photometry
-
-**Source:** RDOCs.
-
-## 9.4 Catalog description
-
-**Source:** RDOCS.
-
-## 9.5 Summary statistics
-
-**Source:** RTB. This is where one might show limiting magnitudes and show validation of the photometric uncertainties based on source injection & recovery.
+s09/00-overview
+s09/01-input-source-models
+s09/02-limitations
+s09/03-injection-recovery-and-photometry
+s09/04-catalog-description
+s09/05-summary-statistics
+```

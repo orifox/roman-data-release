@@ -1,37 +1,18 @@
 # 7. Image Rectification and Co-Addition
 
-## 7.0 Overview
+% Each subsection is its own page in docs/dr/s07/. To change the order,
+% move its line in the list below, then update the number in its title and
+% the number at the start of its file name.
+```{toctree}
+:maxdepth: 1
 
-**Source:** RTB. Highlight anything different for this data release
-
-## 7.1 Sky tesselation
-
-**Source:** RDOCs.
-
-## 7.2 Resampling and projection
-
-**Source:** RDOCs.
-
-## 7.3 Sky estimation and matching
-
-**Source:** RDOCs. This could be a long section down the road if/when we include scattered light, zodi and/or thermal in the background estimation.
-
-## 7.4 Weighting strategy
-
-**Source:** RDOCs.
-
-## 7.5 Outlier rejection
-
-**Source:** RDOCs. Highlight implications for moving targets or transients
-
-## 7.6 Uncertainty arrays and error model
-
-**Source:** RDOCs.
-
-## 7.7 Point-spread functions
-
-**Source:** RTB. Include diagnostics of PSF width and shape
-
-## 7.8 Known problems
-
-**Source:** RTB.
+s07/00-overview
+s07/01-sky-tesselation
+s07/02-resampling-and-projection
+s07/03-sky-estimation-and-matching
+s07/04-weighting-strategy
+s07/05-outlier-rejection
+s07/06-uncertainty-arrays-and-error-model
+s07/07-point-spread-functions
+s07/08-known-problems
+```

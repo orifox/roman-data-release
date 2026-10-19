@@ -47,7 +47,7 @@ against the theme's own `sidebartitle` block. `index.md` uses one captioned
   landing page whose `toctree` lists the sections in order; add new section
   pages there. Subsections from the planning spreadsheet carry a
   `**Source:**` line (RDOCs, RTB, DMS) followed by notes on what to write.
-  Sections 5 and 6 are split further: the section page (e.g.
+  Sections 5–10 are split further: the section page (e.g.
   `s05-calibration-pixel-level-correction.md`) holds any section intro and a
   `toctree` of one page per subsection in `docs/dr/sNN/` (file names prefixed with the subsection number, e.g.
   `05-persistence-masking.md`, `12.1-zeropoints-...md`, `00-overview.md`, so the folder sorts

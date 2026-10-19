@@ -1,0 +1,3 @@
+# 9.0 Overview
+
+**Source:** RDOCs. This whole section could instead be a subsection of "Static Catalog Validation"…
