@@ -1,5 +1,12 @@
 # 5. Calibration/Pixel-Level Correction
 
+**Ferguson notes:** This section is in principle shared by all data releases that share the same
+calibration and pipeline identifier -- e.g. "27a". We'll need to decide how we are sharing text
+(presumably across github repos?). At the top we should have a table that prominently lists the relevant
+pmap, calibration-pipeline-version and science-data-formatting version. I'm not sure what "pixel-level correction" 
+means as distinct from exposure-level processing. It looks like subsections here are a bit redundant
+with s06?
+
 The pipeline's first stage, applied to each detector quadrant. The paper
 covers these steps, in roughly the order they are applied:
 
